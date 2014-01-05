@@ -33,7 +33,7 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>    
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSFdGPHXzMM5m-MUrtokbJHODONiuG8RU&sensor=false"></script>
-<script src="js/api.js"></script>
+<script src="js/api.min.js"></script>
 </body>
 
 </html>

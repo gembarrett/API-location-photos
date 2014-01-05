@@ -40,17 +40,19 @@ module.exports = function(grunt) {
                     spawn: false,
                 },
             },
-            css: {
-                files: ['**/*.scss'],
-                tasks: ['compass']
-            },
+
             images: {
                 files: ['images/**/*.{png,jpg,gif}', 'images/*.{png,jpg,gif}'],
                 tasks: ['imagemin'],
                 options: {
                     spawn: false,
                 }
-            }
+            },
+            
+            css: {
+                files: ['**/*.scss'],
+                tasks: ['compass']
+            }        
         }    
     });
 
@@ -59,5 +61,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['imagemin', 'compass', 'watch', 'uglify']);
+    grunt.registerTask('default', ['uglify', 'imagemin', 'compass', 'watch']);
 };
