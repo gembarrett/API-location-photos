@@ -3,22 +3,13 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
-        /*concat: {
-            dist: {
-                src: [
-                    'js/libs/*.js', 
-                    'js/global.js'
-                ],
-                dest: 'js/build/production.js',
-            }            
-        },
-        
+    
         uglify: {
             build: {
-                src: 'js/build/production.js',
-                dest: 'js/build/production.min.js'
+                src: 'js/api.js',
+                dest: 'js/api.min.js'
             }
-        }, */
+        },
         
         imagemin: {
             dynamic: {
@@ -42,13 +33,13 @@ module.exports = function(grunt) {
         },
         
         watch: {
-            /*scripts: {
+            scripts: {
                 files: ['js/*.js'],
-                tasks: ['concat', 'uglify'],
+                tasks: ['uglify'],
                 options: {
                     spawn: false,
                 },
-            } */
+            },
             css: {
                 files: ['**/*.scss'],
                 tasks: ['compass']
@@ -63,12 +54,10 @@ module.exports = function(grunt) {
         }    
     });
 
-    //grunt.loadNpmTasks('grunt-contrib-concat');
-    //grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    //grunt.registerTask('default', ['concat', 'uglify']);
-    grunt.registerTask('default', ['imagemin', 'compass', 'watch']);
+    grunt.registerTask('default', ['imagemin', 'compass', 'watch', 'uglify']);
 };
