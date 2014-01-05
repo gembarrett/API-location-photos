@@ -1,0 +1,82 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+$midBlue:#205983;
+$darkBlue:#0A2742;
+
+html, body {
+    font-family:Helvetica, sans-serif;
+    @include background-image(radial-gradient($midBlue, $darkBlue));
+    color:#fff;
+    text-align:center;
+}
+
+#map {
+    height:500px;
+    width:100%;
+}
+
+
+#container {
+    margin:0 auto;
+    width:75%;
+}
+    
+input {
+    display:block;
+    border:0;
+    width:75%;
+    font-size:40px;
+    margin:0 auto 20px;
+}
+
+#place {
+    box-shadow:0 1px 0 rgba(255,255,255,.15), 0 2px 4px rgba(0,0,0,.2) inset, 0 0 12px rgba(255,255,255,.1);
+    background:rgba(0,0,0,.1);
+    @include border-radius(20px);
+    padding:8px 20px;
+    outline:0;
+    text-align:left;
+}
+
+#inputFields {
+    padding:50px;
+}
+
+#searchPlace {
+    @include border-radius(20px);
+    background-color:$midBlue;
+    width:50%;
+    outline:0;
+    color:#fff;
+    &:hover, &:active, &:focus {
+        background-color:$darkBlue;
+    }
+}
+
+.photo {
+    padding:20px;
+    float:left;
+    width:200px;
+    height:200px;
+    img {
+        height:100px;
+        display:block;
+        margin:0 auto
+    }
+}
+
+h1 {
+    font-size:50px;
+    padding:20px;
+}
+
+h2 {
+    font-size:40px;
+    padding:20px 150px;
+}
