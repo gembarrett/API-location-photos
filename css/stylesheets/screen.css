@@ -112,14 +112,15 @@ input {
   padding: 8px 20px;
   outline: 0;
   text-align: left;
+  color: #fff;
 }
 
-/* line 47, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 #inputFields {
   padding: 50px;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 #searchPlace {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -131,32 +132,32 @@ input {
   outline: 0;
   color: #fff;
 }
-/* line 57, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 #searchPlace:hover, #searchPlace:active, #searchPlace:focus {
   background-color: #0a2742;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .photo {
   padding: 20px;
   float: left;
   width: 200px;
   height: 200px;
 }
-/* line 67, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 .photo img {
   height: 100px;
   display: block;
   margin: 0 auto;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 h1 {
   font-size: 50px;
   padding: 20px;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 h2 {
   font-size: 40px;
   padding: 20px 150px;
