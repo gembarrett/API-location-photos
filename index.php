@@ -27,6 +27,13 @@
         <div id="photos"></div>
         <div id="map"></div>
     </div>    
+    
+    <div id="footer"><p>This is an API experiment by <a href="http://www.gembarrett.com" target="_blank">Gem Barrett</a><br /><br />
+            <a href="https://github.com/gembarrett/API-location-photos" target="_blank"><img src="images/github.png" alt="See this project on GitHub" /></a>
+            <a href="http://www.linkedin.com/in/gembarrett" target="_blank"><img src="images/linkedin.png" alt="Connect with me on LinkedIn" /></a>
+            <a href="https://twitter.com/gembarrett" target="_blank"><img src="images/twitter.png" alt="Follow me on Twitter" /></a>
+        </p></div>
+    
 </div>    
     <script type="text/javascript">
         

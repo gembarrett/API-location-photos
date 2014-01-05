@@ -21,10 +21,27 @@ html, body {
     width:100%;
 }
 
+a:link, a:visited {
+    text-decoration:none;
+    color:#fff;
+    font-style:italic; 
+}
+
+a:hover {
+    text-decoration:none;
+    color:#327db4;
+}
+
 
 #container {
     margin:0 auto;
     width:75%;
+}
+
+#footer {
+    img {
+        padding:10px;
+    }
 }
     
 input {
