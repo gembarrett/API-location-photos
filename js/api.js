@@ -11,7 +11,7 @@ var placeCoordinates;
             $.getJSON(placeNameCall, function(json) {
                                                 
                 // create API call using place_id of first returned place
-                var placeCall = 'http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=bd7baec4e47b6420f3e17a115ab08074&sort=interestingness-desc&place_id=' + json.places.place[0].place_id + '&extras=owner_name&per_page=6&page=1&format=json&jsoncallback=?';
+                var placeCall = 'http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=bd7baec4e47b6420f3e17a115ab08074&sort=interestingness-desc&place_id=' + json.places.place[0].place_id + '&extras=owner_name&per_page=4&page=1&format=json&jsoncallback=?';
                   
                 // use placeCall to search for photos of specified place
                 $.getJSON(placeCall, function(data) {
